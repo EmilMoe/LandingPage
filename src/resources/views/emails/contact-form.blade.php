@@ -1,5 +1,5 @@
-@extends('emails.layout')
+@extends('LandingPage::emails.layout')
 
-@section('content')
+@section('__content')
     {{ $text }}
 @endsection
