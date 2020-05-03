@@ -3,9 +3,11 @@
         <header class="section-header">
             <h2>{{ $title }}</h2>
             <hr>
-            <p class="lead">
-                {{ $info ?? '' }} 
-            </p>
+            @if(isset($info))
+                <p class="lead">
+                    {{ $info  }} 
+                </p>
+            @endif
         </header>
         <div class="row gap-y">
             {{ $slot }}

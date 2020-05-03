@@ -15,7 +15,7 @@ class Facts extends Component
      *
      * @return void
      */
-    public function __construct(string $title, string $info, string $id = null)
+    public function __construct(string $title, string $info = null, string $id = null)
     {
         $this->id = $id;
         $this->title = $title;
