@@ -6,11 +6,13 @@ use Illuminate\Support\ServiceProvider;
 use EmilMoe\LandingPage\Components\Facts;
 use EmilMoe\LandingPage\Components\Contact;
 use EmilMoe\LandingPage\Components\FactBox;
+use EmilMoe\LandingPage\Components\Faq;
 use EmilMoe\LandingPage\Components\Features;
 use EmilMoe\LandingPage\Components\Partners;
 use EmilMoe\LandingPage\Components\FeatureBox;
 use EmilMoe\LandingPage\Components\Highlights;
 use EmilMoe\LandingPage\Components\HighlightBox;
+use EmilMoe\LandingPage\Components\Signup;
 
 class LandingPageServiceProvider extends ServiceProvider
 {
@@ -33,6 +35,8 @@ class LandingPageServiceProvider extends ServiceProvider
             Contact::class,
             Facts::class,
             FactBox::class,
+            Faq::class,
+            Signup::class,
         ]);
     }
 
