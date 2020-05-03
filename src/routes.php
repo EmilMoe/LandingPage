@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
-use LandingPage\Mail\ContactForm;
+use EmilMoe\LandingPage\Mail\ContactForm;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/css/style.css', function() {
