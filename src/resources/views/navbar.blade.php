@@ -18,8 +18,8 @@
             </nav>
             <div>
                 @auth
-                    @if(config('landingpage.app.route'))
-                        <a class="btn btn-sm btn-success ml-lg-5 mr-2" href="{{ route(config('landingpage.app.route'), config('landingpage.app.parameters')) }}">Start</a>
+                    @if(isset($app))
+                        <a class="btn btn-sm btn-success ml-lg-5 mr-2" href="{{ $app }}">Start</a>
                         <a class="btn btn-sm btn-light" href="{{ route('logout') }}">Log out</a>
                     @endif
                 @endauth
