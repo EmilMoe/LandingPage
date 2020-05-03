@@ -15,4 +15,6 @@ Route::post('contact', function(Request $request) {
     Illuminate\Support\Facades\Mail::send(new ContactForm($request));
 
     return redirect()->to('/#contact')->with('sent', true);
-})->name('contact');
+})
+    ->name('contact')
+    ->middleware('web');
