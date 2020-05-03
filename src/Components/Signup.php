@@ -15,7 +15,7 @@ class Signup extends Component
      */
     public function __construct(string $title = null)
     {
-        $this->company = $title;
+        $this->title = $title;
     }
 
     /**
