@@ -34,8 +34,8 @@
                     <div class="form-group">
                         <input type="password" name="password_confirmation" class="form-control form-control-lg" placeholder="Confirm password"  required autocomplete="new-password">
                     </div>
+                    <button class="btn btn-block btn-xl btn-success">Sign up</button>
                 </div>
-                <button class="btn btn-block btn-xl btn-success">Sign up</button>
             </form>
         </div>
     </div>
