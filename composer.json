@@ -1,0 +1,15 @@
+{
+    "name": "emilmoe/landingpage",
+    "description": "SaaS Landing Page",
+    "type": "library",
+    "require": {
+        "laravel/framework": "7.*"
+    },
+    "license": "Propertary",
+    "authors": [
+        {
+            "name": "Emil Moe",
+            "email": "emil@moegroup.dk"
+        }
+    ]
+}
