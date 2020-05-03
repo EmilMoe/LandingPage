@@ -4,7 +4,7 @@
             <h2>{{ $title }}</h2>
             <hr>
             <p class="lead">
-                {[ $info ]} 
+                {{ $info ?? '' }} 
             </p>
         </header>
         <div class="row gap-y">
