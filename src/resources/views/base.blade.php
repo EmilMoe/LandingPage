@@ -28,7 +28,8 @@
     <body class="h-100">
         @include('LandingPage::navbar', [
             'logo' => $logo ?? null,
-            'app' => $app ?? null
+            'app' => $app ?? null,
+            'nav' => $nav ?? [],
         ])
 
         <main class="main-content">

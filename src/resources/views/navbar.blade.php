@@ -12,11 +12,9 @@
         </div>
         <section class="navbar-mobile">
             <nav class="nav nav-navbar mr-auto">
-                <a class="nav-link active" href="#">Home</a>
-                <a class="nav-link" href="#units">Units</a>
-                <a class="nav-link" href="#pivot">Pivot</a>
-                <a class="nav-link" href="#integrations">Integration</a>
-                <a class="nav-link" href="#contact">Contact</a>
+                @foreach($nav as $text => $link)
+                    <a class="nav-link" href="{{ $link }}">{{ $text }}</a>
+                @endforeach
             </nav>
             <div>
                 @auth
