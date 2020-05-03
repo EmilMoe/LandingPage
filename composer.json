@@ -11,5 +11,12 @@
             "name": "Emil Moe",
             "email": "emil@moegroup.dk"
         }
-    ]
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "EmilMoe\\LandingPage\\LandingPageServiceProvider"
+            ]
+        }
+    }
 }
