@@ -12,6 +12,11 @@
             "email": "emil@moegroup.dk"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "EmilMoe\\LandingPage\\": "src"
+        }
+    },
     "extra": {
         "laravel": {
             "providers": [
