@@ -6,15 +6,15 @@
             </div>
             <div class="col-md-6 text-center text-md-right">
                 <div class="social">
-                    @if(isset($linkedin))
-                        <a class="social-linkedin" href="https://www.linkedin.com/company/{{ $linkedin }}" target="_blank">
-                            <i class="fa fa-linkedin"></i>
+                    @if(isset($facebook))
+                        <a class="social-facebook" href="https://www.facebook.com/{{ $facebook }}" target="_blank">
+                            <i class="fa fa-facebook"></i>
                         </a>
                     @endif
 
-                    @if(isset($facebook))
-                        <a class="social-facebook" href="https://www.facebook.com/{{ $linkedin }}" target="_blank">
-                            <i class="fa fa-facebook"></i>
+                    @if(isset($linkedin))
+                        <a class="social-linkedin" href="https://www.linkedin.com/company/{{ $linkedin }}" target="_blank">
+                            <i class="fa fa-linkedin"></i>
                         </a>
                     @endif
                 </div>
