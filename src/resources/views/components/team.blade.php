@@ -4,7 +4,7 @@
             <h2>{{ __('landingpage::team.title') }}</h2>
         </header>
 
-        <div class="row gap-y">
+        <div class="row gap-y d-flex justify-content-around">
             @foreach($members as $member)
                 <div class="col-md-4 team-2">
                     <img src="{{ $member['image'] }}" alt="...">
