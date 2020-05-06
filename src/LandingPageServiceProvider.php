@@ -4,6 +4,7 @@ namespace EmilMoe\LandingPage;
 
 use EmilMoe\LandingPage\Components\Faq;
 use Illuminate\Support\ServiceProvider;
+use EmilMoe\LandingPage\Components\Team;
 use EmilMoe\LandingPage\Components\Facts;
 use EmilMoe\LandingPage\Components\Signup;
 use EmilMoe\LandingPage\Components\Contact;
@@ -39,6 +40,7 @@ class LandingPageServiceProvider extends ServiceProvider
             Faq::class,
             Signup::class,
             Process::class,
+            Team::class,
         ]);
     }
 
