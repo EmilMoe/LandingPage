@@ -8,6 +8,7 @@ use EmilMoe\LandingPage\Components\Facts;
 use EmilMoe\LandingPage\Components\Signup;
 use EmilMoe\LandingPage\Components\Contact;
 use EmilMoe\LandingPage\Components\FactBox;
+use EmilMoe\LandingPage\Components\Process;
 use EmilMoe\LandingPage\Components\Features;
 use EmilMoe\LandingPage\Components\Partners;
 use EmilMoe\LandingPage\Components\FeatureBox;
@@ -37,6 +38,7 @@ class LandingPageServiceProvider extends ServiceProvider
             FactBox::class,
             Faq::class,
             Signup::class,
+            Process::class,
         ]);
     }
 
