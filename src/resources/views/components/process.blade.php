@@ -7,7 +7,7 @@
         </header>
 
         @foreach($steps as $step)
-            <div class="row gap-y align-items-center py-7">
+            <div class="row gap-y align-items-center {{ if($loop->first) 'pb-7' elseif($loop->last) 'pt-7' else 'py-7' }}">
                 @if($loop->odd)
                     <div class="col-md-5 mr-auto text-center text-md-left">
                 @else
