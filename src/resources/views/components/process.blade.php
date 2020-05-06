@@ -8,6 +8,10 @@
 
         @foreach($steps as $step)
             <div class="row gap-y align-items-center py-7">
+                @if($loop->odd)
+                    <div class="col-md-5 mr-auto text-center text-md-left">
+                @endif
+                
                 <div class="col-md-6 text-center">
                     @if(isset($step['image']))
                         <img src="{{ $step['image'] }}" alt="{{ $step['title'] }}">
@@ -18,6 +22,10 @@
                     <h3>{{ $step['title'] }}</h3>
                     <p>{!! $step['info'] !!}</p>
                 </div>
+
+                @if($loop->odd)
+                    </div>
+                @endif
             </div>
         @endforeach
     </div>
