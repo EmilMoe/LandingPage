@@ -9,7 +9,9 @@
         @foreach($steps as $step)
             <div class="row gap-y align-items-center py-7">
                 <div class="col-md-6 text-center">
-                    <img src="{{ $step['image'] }}" alt="{{ $step['title'] }}">
+                    @if(isset($step['image']))
+                        <img src="{{ $step['image'] }}" alt="{{ $step['title'] }}">
+                    @endif
                 </div>
                 <div class="col-md-5 ml-auto text-center text-md-left">
                     <p class="lead-9 fw-900 lh-1 opacity-10">{{ str_pad(($loop->index + 1), 2, '0', STR_PAD_LEFT) }}</p>
