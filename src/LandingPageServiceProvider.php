@@ -25,7 +25,7 @@ class LandingPageServiceProvider extends ServiceProvider
     {
         view()->addNamespace('LandingPage', __DIR__ .'/resources/views');
         $this->loadRoutesFrom(__DIR__ .'/routes.php');
-
+        $this->loadTranslationsFrom(__DIR__.'/resources/lang', 'landingpage');
         $this->loadViewComponentsAs('landing-page', [
             Partners::class,
             Features::class,
