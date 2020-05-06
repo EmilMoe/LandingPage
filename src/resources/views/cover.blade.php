@@ -9,10 +9,14 @@
                     {{ $text ?? '' }}
                 </p>
                 <p class="gap-xy">
-                    @if(\Route::has('register'))
-                        <a class="btn btn-round btn-primary mw-150" href="{{ route('register') }}">Sign up now</a>
+                    @if(isset($call_to_action))
+                        <a class="btn btn-round btn-primary mw-150" href="{{ key($call_to_action) }}">{{ $call_to_action[key($call_to_action)] }}</a>
                     @else
-                        <a class="btn btn-round btn-primary mw-150" href="#contact">Request presentation</a>
+                        @if(\Route::has('register'))
+                            <a class="btn btn-round btn-primary mw-150" href="{{ route('register') }}">Sign up now</a>
+                        @else
+                            <a class="btn btn-round btn-primary mw-150" href="#contact">Request presentation</a>
+                        @endif
                     @endif
                 </p>
             </div>

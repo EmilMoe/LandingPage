@@ -30,6 +30,7 @@
             'logo' => $logo ?? null,
             'app' => $app ?? null,
             'nav' => $nav ?? [],
+            'call_to_action' => null,
         ])
 
         <main class="main-content">
