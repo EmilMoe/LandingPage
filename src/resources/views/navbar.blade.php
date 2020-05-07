@@ -16,14 +16,16 @@
                     <a class="nav-link" href="{{ $link }}">{{ $text }}</a>
                 @endforeach
             </nav>
-            <div>
-                @auth
-                    @if(isset($app))
-                        <a class="btn btn-sm btn-success ml-lg-5 mr-2" href="{{ $app }}">Start</a>
-                        <a class="btn btn-sm btn-light" href="{{ route('logout') }}">Log out</a>
-                    @endif
-                @endauth
-            </div>
+            @if(isset($app))
+                <div>
+                    @auth
+                        <a class="btn btn-sm btn-success ml-lg-5 mr-2" href="{{ $app }}">{{ __('landingpage::navbar.start') }}</a>
+                        <a class="btn btn-sm btn-light" href="{{ route('logout') }}">{{ __('landingpage::navbar.signout') }}</a>
+                    @else
+                        <a class="btn btn-sm btn-success ml-lg-5 mr-2" href="{{ route('login') }}">{{ __('landingpage::navbar.signin') }}</a>
+                    @endauth
+                </div>
+            @endif
         </section>
     </div>
 </nav>
