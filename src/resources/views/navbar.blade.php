@@ -19,10 +19,11 @@
             @if(isset($app))
                 <div>
                     @auth
-                        <a class="btn btn-sm btn-success ml-lg-5 mr-2" href="{{ $app }}">{{ __('landingpage::navbar.start') }}</a>
+                        <a class="btn btn-sm btn-success" href="{{ $app }}">{{ __('landingpage::navbar.start') }}</a>
                         <a class="btn btn-sm btn-light" href="{{ route('logout') }}">{{ __('landingpage::navbar.signout') }}</a>
                     @else
-                        <a class="btn btn-sm btn-success ml-lg-5 mr-2" href="{{ route('login') }}">{{ __('landingpage::navbar.signin') }}</a>
+                        <a class="btn btn-sm btn-outline-success" href="{{ route('login') }}">{{ __('landingpage::navbar.signin') }}</a>
+                        <a class="btn btn-sm btn-success" href="{{ route('register') }}">{{ __('landingpage::navbar.register') }}</a>
                     @endauth
                 </div>
             @endif
