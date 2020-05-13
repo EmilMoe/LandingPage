@@ -7,6 +7,7 @@ use Illuminate\Support\ServiceProvider;
 use EmilMoe\LandingPage\Components\Team;
 use EmilMoe\LandingPage\Components\Facts;
 use EmilMoe\LandingPage\Components\Intro;
+use EmilMoe\LandingPage\Components\Footer;
 use EmilMoe\LandingPage\Components\Signup;
 use EmilMoe\LandingPage\Components\Contact;
 use EmilMoe\LandingPage\Components\FactBox;
@@ -43,6 +44,7 @@ class LandingPageServiceProvider extends ServiceProvider
             Process::class,
             Team::class,
             Intro::class,
+            Footer::class,
         ]);
     }
 

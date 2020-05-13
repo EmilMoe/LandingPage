@@ -5,7 +5,7 @@
                 @if(! isset($footer))
                     <small>&copy; {{ env('APP_NAME') }} {{ date('Y') }}, All rights reserved.</small>
                 @else
-                    {!! $footer !!}
+                    {{ $footer }}
                 @endif
             </div>
             <div class="col-md-6 text-center text-md-right">

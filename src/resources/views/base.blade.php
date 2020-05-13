@@ -38,11 +38,13 @@
             @yield('content')
         </main>
 
-        @include('LandingPage::footer', [
-            'linkedin' => $linkedin ?? null,
-            'facebook' => $facebook ?? null,
-            'footer' => $footer ?? null,
-        ])
+        <x-landing-page-footer
+                :linkedin="$linkedin"
+                :facebook="$facebook">
+            <x-slot name="footer">
+                {{ $footer }}
+            </x-slot>
+        </x-landing-page-footer>
 
         @if(env('APP_ENV') !== 'local')
             <script src="//cdn.polyfill.io/v2/polyfill.min.js"></script>
