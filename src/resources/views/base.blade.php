@@ -41,6 +41,7 @@
         @include('LandingPage::footer', [
             'linkedin' => $linkedin ?? null,
             'facebook' => $facebook ?? null,
+            'footer' => $footer ?? null,
         ])
 
         @if(env('APP_ENV') !== 'local')

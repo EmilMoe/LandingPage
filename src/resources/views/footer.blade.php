@@ -2,7 +2,11 @@
     <div class="container">
         <div class="row gap-y align-items-center">
             <div class="col-md-6 text-center text-md-left">
-                <small>&copy; {{ env('APP_NAME') }} {{ date('Y') }}, All rights reserved.</small>
+                @if(! isset($footer))
+                    <small>&copy; {{ env('APP_NAME') }} {{ date('Y') }}, All rights reserved.</small>
+                @else
+                    {!! $footer !!}
+                @endif
             </div>
             <div class="col-md-6 text-center text-md-right">
                 <div class="social">
