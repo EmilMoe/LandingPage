@@ -42,7 +42,7 @@
                 :linkedin="$linkedin"
                 :facebook="$facebook">
             <x-slot name="footer">
-                {{ $footer }}
+                @yield('footer')
             </x-slot>
         </x-landing-page-footer>
 
